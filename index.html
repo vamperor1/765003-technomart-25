@@ -11,8 +11,10 @@
         <a class="main-header-logo">
           <img src="img/header-logo.svg" width="220" height="47" alt="Логотип интернет-магазина «Техномарт»">
         </a>
-        <!-- Для разметки незнакомых интерактивных элементов вне форм можно использовать тег span (из задания) -->
-        <span class="site-search">Поиск:</span>
+        <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search">Поиск по сайту</label>
+        <input type="search" name="search" id="search" placeholder="Поиск:">
+        </form>
         <a class="button-bookmarks" href="#">
           <!-- Здесь span резервирует место для вставки количества закладок. Пока не знаю, нужна ли для этого элемента разметка -->
           Закладки:<span class="bookmarks-amount"></span>
@@ -30,17 +32,17 @@
               <a href="tel:+78125550555">+7 (812) 555-05-55</a>             
             </li>
             <li class="address-header">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </li>
           </ul>
         </div>
         <div class="user-navigation">
           <ul>
-            <li class="user-button login">
-              Войти
+            <li>
+              <a class="user-button login" href="login.html">Войти</a>
             </li>
-            <li class="user-button registration">
-              Регистрация
+            <li>
+              <a class="user-button registration" href="registration.html">Регистрация</a>
             </li>
           </ul>
         </div>
@@ -69,8 +71,8 @@
           Техномарт работает со многими транспортными компаниями:</p>
         <ul class="logistic-partners">
           <li><a class="logistic-link" href="#"><b>Деловые линии</b></a></li>
-          <li><a class="logistic-link" href="#"></a><b>Автотрейдинг</b></a></li>
-          <li><a class="logistic-link" href="#"></a><b>ЖелДорЭкспедиция</b></a></li>
+          <li><a class="logistic-link" href="#"><b>Автотрейдинг</b></a></li>
+          <li><a class="logistic-link" href="#"><b>ЖелДорЭкспедиция</b></a></li>
         </ul>
         <a class="button" href="#">Подробнее о компании</a>
       </section>
@@ -79,10 +81,10 @@
         <h2>КОНТАКТЫ</h2>
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <a href="#" class="map-popup">
-          <img src="img/mini-map.png" width="300" height="158" alt="Как проехать в офис «Техномарт»">
+        <a href="map.html" class="map-popup">
+          <img src="img/mini-map.png" width="300" height="158" alt="Офис компании «Техномарт» по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
-        <span class="button write-us">Заблудились? Напишите нам!</span>
+        <a class="button" href="contact-form.html">Заблудились? Напишите нам!</a>
       </section>
     
     </main>
@@ -101,7 +103,7 @@
         </ul>
       </nav>
       <p class="footer-contacts">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address><br>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>    
       </p>
       <div class="footer-bottom-menu">
@@ -130,9 +132,47 @@
         </p>
         <p class="development">
           Разработано —<br>
-          <a class="link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+          <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </footer>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.png" width="940" height="446" alt="Офис компании «Техномарт» по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </p>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
+    </section>
+
+    <section class="modal modal-contact">
+      <h2 class="visually-hidden">Сообщение для компании</h2>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="name-section">
+          <label class="modal-contact-label" for="customer-name">Ваше имя:</label>
+          <input class="customer-name" type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="email-section">
+          <label class="modal-contact-label" for="customer-email">Ваш e-mail:</label>
+          <input class="customer-email" type="text" name="customer-email" id="customer-email" placeholder="email@examole.com" required>
+        </p>
+        <p class="message-section">
+          <label class="modal-contact-label" for="customer-message">Текст письма:</label>
+            <textarea class="customer-message" name="customer-message" id="customer-message" placeholder="В свободной форме">
+            </textarea>
+        </p>
+        <p class="submit-section">
+          <button class="button" type="submit">
+            Отправить
+          </button>
+        </p>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
+    </section>
+
   </body>
 </html>

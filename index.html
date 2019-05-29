@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -12,8 +15,8 @@
           <img src="img/header-logo.svg" width="220" height="47" alt="Логотип интернет-магазина «Техномарт»">
         </a>
         <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input type="search" name="search" id="search" placeholder="Поиск:">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input type="search" name="search" id="search" placeholder="Поиск:">
         </form>
         <a class="button-bookmarks" href="#">
           <!-- Здесь span резервирует место для вставки количества закладок. Пока не знаю, нужна ли для этого элемента разметка -->
@@ -25,27 +28,27 @@
         </a>
         <a class="button-order" href="#">Оформить заказ</a>
       </div>
-      <h1 class="descriptor">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="descriptor">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
       <div class="contacts-header">
-          <ul>
-            <li class="tel-header">
-              <a href="tel:+78125550555">+7 (812) 555-05-55</a>             
-            </li>
-            <li class="address-header">
-              <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            </li>
-          </ul>
-        </div>
-        <div class="user-navigation">
-          <ul>
-            <li>
-              <a class="user-button login" href="login.html">Войти</a>
-            </li>
-            <li>
-              <a class="user-button registration" href="registration.html">Регистрация</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="contacts-header-list">
+          <li class="tel-header">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </li>
+          <li class="address-header">
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          </li>
+        </ul>
+      </div>
+      <div class="user-navigation">
+        <ul class="user-navigation-list">
+          <li>
+            <a class="user-button login" href="login.html">Войти</a>
+          </li>
+          <li>
+            <a class="user-button registration" href="registration.html">Регистрация</a>
+          </li>
+        </ul>
+      </div>
       <nav class="site-navigation-header">
         <ul class="navigation-menu-header">
           <li><a>Главная</a></li>
@@ -102,12 +105,12 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <p class="footer-contacts">
-        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address><br>
+      <div class="footer-contacts">
+        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>    
-      </p>
+      </div>
       <div class="footer-bottom-menu">
-        <ul>
+        <ul class="additional-menu-footer">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>

@@ -82,7 +82,7 @@ address {
 }
 
 a.main-header-logo {
-  display: block;
+  display: inline-block;
   width: 220px;
   height: 47px;
   background: #ee3643;
@@ -355,7 +355,7 @@ h1.descriptor {
 }
 
 a.main-footer-logo {
-  display: block;
+  display: inline-block;
   width: 220px;
   height: 68px;
   background: #ee3643;

@@ -43,12 +43,28 @@ address {
 }
 
 .main-header {
+  padding-bottom: 1px;
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #f3f7f9;
 }
 
 .header-top-menu {
+  margin-bottom: 46px;
   background-color: #293449;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.header-top-menu .container {
+  display: flex;
 }
 
 .header-top-menu a {
@@ -84,23 +100,25 @@ address {
 a.main-header-logo {
   display: inline-block;
   width: 220px;
-  height: 47px;
+  height: 42px;
   background: #ee3643;
-  box-shadow: inset 0 -5px #b52933;
+  box-shadow: 0 5px #b52933;
 }
 
 a.main-header-logo:hover,
 a.main-header-logo:focus {
   background: #ca2c37;
-  box-shadow: inset 0 -5px #9a212a;
+  box-shadow: 0 5px #9a212a;
 }
 
 a.main-header-logo:active {
   background: #ba2732;
-  box-shadow: inset 0 -5px #8e1e26;
+  box-shadow: 0 5px #8e1e26;
 }
 
 .site-navigation-header {
+  margin-bottom: 64px;
+
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -116,6 +134,9 @@ input[type="search"] {
 }
 
 .descriptor {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 23pt;
   font-style: italic;
@@ -126,17 +147,31 @@ h1.descriptor {
   font-weight: 400;
 }
 
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+    
+  width: 540px;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
 .contacts-header-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .tel-header a {
+  width: 266px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
 }
 
 .tel-header {
+  width: 266px;
   text-align: center;
 }
 
@@ -147,7 +182,16 @@ h1.descriptor {
   text-align: center;
 }
 
+.user-navigation {
+  width: 300px;
+}
+
 .user-navigation-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -172,7 +216,16 @@ h1.descriptor {
   color: rgba(0,0,0,0.3)
 }
 
+.user-navigation-authorized {
+  width: 300px;
+}
+
 .authorized-navigation-list {
+  display: flex;
+  
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -207,6 +260,11 @@ h1.descriptor {
 .navigation-menu-header,
 .navigation-menu-footer,
 .additional-menu-footer {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -224,8 +282,27 @@ h1.descriptor {
   opacity: 0.5;
 }
 
+.bottom-block {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 86px;
+}
+
+.company-intro {
+  width: 540px;
+  padding-top: 80px;
+}
+
+.contacts-office {
+  width: 300px;
+  padding-top: 80px;
+}
+
 .company-intro h2,
 .contacts-office h2 {
+  margin: 0;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -234,6 +311,9 @@ h1.descriptor {
 }
 
 .logistic-partners {
+  margin: 0;
+  padding:0;
+
   list-style: none;
 }
 
@@ -246,6 +326,10 @@ h1.descriptor {
 
 .breadcrumbs {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .breadcrumbs a,
@@ -257,6 +341,11 @@ h1.descriptor {
 }
 
 .page-category {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 32px 34px;
+  
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -265,6 +354,20 @@ h1.descriptor {
   font-weight: 400;
 
   background-color: #f2f6f8;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog {
+  width: 700px;
+  margin-bottom: 32px;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filter fieldset {
@@ -303,7 +406,22 @@ h1.descriptor {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+
+  margin: 0;
+  padding: 0;
+  }
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item-image {
@@ -386,8 +504,18 @@ a.main-footer-logo:active {
 }
 
 .site-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 31px;
+
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer-contacts-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-bottom-menu {
@@ -397,6 +525,8 @@ a.main-footer-logo:active {
 }
 
 .footer-contacts {
+  margin-bottom: 50px;
+
   font-size: 18px;
   line-height: 24px;
 }
@@ -420,6 +550,9 @@ a.main-footer-logo:active {
 }
 
 .footer-social ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 

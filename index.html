@@ -165,9 +165,9 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
+      <a href="https://www.google.com/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург" target="_blank">
         <img src="img/map.png" width="940" height="446" alt="Офис компании «Техномарт» по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      </p>
+      </a>
       <button class="modal-close" type="button">
         Закрыть
       </button>
@@ -176,24 +176,29 @@
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Сообщение для компании</h2>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="name-section">
-          <label class="modal-contact-label" for="customer-name">Ваше имя:</label>
-          <input class="customer-name" type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия">
-        </p>
-        <p class="email-section">
-          <label class="modal-contact-label" for="customer-email">Ваш e-mail:</label>
-          <input class="customer-email" type="text" name="customer-email" id="customer-email" placeholder="email@examole.com" required>
-        </p>
-        <p class="message-section">
-          <label class="modal-contact-label" for="customer-message">Текст письма:</label>
-            <textarea class="customer-message" name="customer-message" id="customer-message" placeholder="В свободной форме">
-            </textarea>
-        </p>
-        <p class="submit-section">
-          <button class="button" type="submit">
+        <div class="contact-data">
+          <div class="flex-contact">
+            <div class="name-section">
+              <label class="modal-contact-label" for="customer-name">Ваше имя:</label>
+              <input class="customer-name" type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия">
+            </div>
+            <div class="email-section">
+              <label class="modal-contact-label" for="customer-email">Ваш e-mail:</label>
+              <input class="customer-email" type="text" name="customer-email" id="customer-email"
+                placeholder="email@examole.com" required>
+            </div>
+          </div>
+          <div class="message-section">
+            <label class="modal-contact-label" for="customer-message">Текст письма:</label>
+            <textarea class="customer-message" name="customer-message" id="customer-message" placeholder="В свободной форме"
+              rows=5></textarea>
+          </div>
+        </div>
+        <div class="submit-section">
+          <button class="button contact-button" type="submit">
             Отправить
           </button>
-        </p>
+        </div>
       </form>
       <button class="modal-close" type="button">
         Закрыть
